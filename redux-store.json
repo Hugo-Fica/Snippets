@@ -1,0 +1,15 @@
+{
+	"Crear un Slice de Redux": {
+		"prefix": "redux-store",
+		"body": [
+			"import { configureStore } from '@reduxjs/toolkit';",
+			"",
+			"export const store = configureStore({",
+				"reducer: {",
+				"",
+				"},",
+			"})"
+		],
+		"description": "Crear el 'store' de Redux"
+	}
+}

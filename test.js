@@ -1,0 +1,23 @@
+import { configureStore } from '@reduxjs/toolkit';
+
+export const store = configureStore({
+    reducer: {
+
+    },
+})
+import { createSlice } from '@reduxjs/toolkit';
+
+export const templateSlice = createSlice({
+    name: 'template',
+    initialState: {
+        counter: 10
+    },
+    reducers: {
+        increment: (state, /* action */) => {
+            state.counter += 1
+        },
+    },
+})
+
+// Action creators are generated for each case reducer function
+export const { increment} = templateSlice.actions
